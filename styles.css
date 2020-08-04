@@ -1,0 +1,53 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+    --fade-in: 0;
+}
+
+body {
+    background-color: rgb(182, 243, 223);
+}
+
+#top {
+    padding-bottom: 8px;
+    width: 900px;
+    display: block;
+    margin: auto;
+    border: 2px solid goldenrod;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+
+#buttons {
+    text-align: center;
+}
+
+#buttons button {
+    background: rgb(189, 187, 187);
+    padding: 4px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols), lfr);
+    grid-template-rows: repeat(var(--grid-rows), lfr);
+    height: 900px;
+    width: 900px;
+    margin: 0 auto;
+    border: 1px indianred;
+}
+
+.default {
+    background: black;
+}
+
+.square {
+    background: whitesmoke;
+}
